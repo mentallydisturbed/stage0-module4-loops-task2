@@ -6,9 +6,10 @@ public class Multiplication {
         int step = 1;
         if(multiplyByAndToInclusive < 0) step = -1;
         while(counter != multiplyByAndToInclusive) {
-            System.out.println(counter * multiplyByAndToInclusive);
+            System.out.println(counter * multiplyByAndToInclusive * step);
             counter += step;
         }
-        System.out.println(multiplyByAndToInclusive * counter);
+        if(multiplyByAndToInclusive != 0)
+        System.out.println(multiplyByAndToInclusive * counter * step);
     }
 }
